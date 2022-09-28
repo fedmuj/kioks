@@ -1,0 +1,63 @@
+.section__hero {
+  @apply m-0 bg-black bg-left bg-no-repeat bg-cover relative min-h-full flex justify-center items-stretch flex-row;
+
+  &.banner {
+    @apply bg-cover bg-center;
+  }
+
+  &__container {
+    @apply flex flex-initial justify-end w-full my-0 mx-auto box-border overflow-hidden items-stretch flex-row pr-12;
+
+    max-width: 1440px;
+
+    &__content {
+      @apply w-full bg-black flex justify-between flex-col;
+      @apply md:w-5/12;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgb(254 253 253 / 90%),
+          rgb(166 164 164 / 90%) 50%,
+          rgba(50,50,50,.9)
+        );
+      box-shadow: 0 0 20px #232323;
+
+      &__text {
+        @apply px-10 py-6 relative;
+      }
+
+      .logo {
+        @apply hidden;
+        @apply md:block ;
+        width: 220px;
+      }
+
+      .slogan {
+        @apply text-white uppercase pt-5 pb-2 text-2xl font-bold;
+      }
+
+      .expo {        
+        color: #007481;
+        font-weight: 400;
+        font-size: 1.5em;
+      }
+
+      .date {
+        @apply text-yellow font-bold text-3xl;
+      }
+
+      .title {
+        @apply text-4xl text-white uppercase py-3 m-0 font-bold;
+        @apply md:text-5xl;
+      }
+
+      .subtitle {
+        @apply py-2 text-lg ;
+        color: #0e1e7d;
+
+        line-height: 1.4;
+      }
+    }
+  }
+}
